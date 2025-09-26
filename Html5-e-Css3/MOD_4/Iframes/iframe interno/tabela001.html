@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com dados realistas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }
+        caption{
+            margin: 20px 0;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+        th, td{
+            padding: 7px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption> Filmes Favoritos </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="colgroup" colspan="3">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Homens</th>
+                    <td>Carson Mondlane</td>
+                    <td>Matrix</td>
+                    <td>O predador</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td>Jardel Castro</td>
+                    <td>Deadpool</td>
+                    <td>Bayb</td>
+                    <td>Flash</td>
+                </tr>
+                <tr>
+                    <td>Pedro Mabote</td>
+                    <td>Vingadores</td>
+                    <td>Velozes e furiosos</td>
+                    <td>Harry Potter</td>
+                </tr>
+                <tr>
+                    <th scope="rowgroup" rowspan="3">Mulheres</th>
+                    <td>Lucia Reginaldo</td>
+                    <td>Spiderman</td>
+                    <td>A donzela</td>
+                    <td>A pequena serea</td>
+                </tr>
+                <tr>
+                    <td>Ana Maria Santos</td>
+                    <td>Allen</td>
+                    <td>Rambo</td>
+                    <td>Big hero</td>
+                </tr>
+                <tr>
+                    <td>Beatriz Melo</td>
+                    <td>Oblivion</td>
+                    <td>Inception</td>
+                    <td>Dangal</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

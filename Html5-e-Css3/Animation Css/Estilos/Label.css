@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+    text-decoration: none;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: #705e46 url('../imagens/background001.jpg') no-repeat center/cover fixed;
+}
+.formulario{
+    max-width: 800px;
+    margin: auto;
+}
+.form{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+
+    max-width: 320px;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+
+    border-radius: 5px;
+    border: 2px groove #b0936d;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+}
+.login{
+    color: white;
+    font-size: 2.2rem;
+    text-shadow: 1px 3px 4px black;
+}
+.input_box{position: relative;}
+.btn{
+    width: 100%;
+    height: 30px;
+    margin-top: 1.5em;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}.nova-senha{
+    margin-top: 1em;
+}.nova-senha a{
+    color: #e7e7e7;
+}.nova-senha a:hover{
+    color: white;
+}.lnk:active{
+    font-weight: bold;
+}
+
+
+/* inputs */
+
+.input{
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border-radius: inherit;
+    border: none;
+}.label{
+    position: absolute;
+    left: 15px;
+    transform: translateY(.4rem);
+
+    color: #8d8d8d;
+    font-size: .9rem;
+    pointer-events: none;
+    background-color: transparent;
+    transition: all .3s ease;
+}.submit{
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+/* label up */
+
+.input_box input:focus,
+.input_box input:valid{
+    outline: none;
+    border: 2px solid black;
+}
+.input_box input:focus ~ label,
+.input_box input:valid ~ label{
+    transform: translateY(-51%) translateX(-10px) scale(.8);
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 1rem;
+    color: #020d30;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+}

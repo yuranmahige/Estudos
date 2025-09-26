@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <main>
+        <h2>Quase pronto</h2>
+        <form action="recebido.php" method="post">
+            <section>
+                <select name="Prov" id="Prov" required>
+                    <option value="">---Escolha a sua provincia---</option>
+                <optgroup label="Zona Sul"></optgroup>
+                    <option value="MP">Maputo provincia</option>
+                    <option value="MC">Maputo Cidade</option>
+                    <option value="GZ">Gaza</option>
+                    <option value="INH">Inhambane</option>
+                <optgroup label="Zona Centro"></optgroup>
+                    <option value="SF"> Sofala</option>
+                    <option value="MN"> Manica</option>
+                    <option value="ZB"> Zambezia</option>
+                    <option value="TT"> Tete</option>
+                <optgroup label="Zona Norte"></optgroup>
+                    <option value="NMP"> Nampula</option>
+                    <option value="NS"> Niassa</option>
+                    <option value="CD"> Cabo Delgado</option>
+                </select>
+                <input type="text" list="Profissao" required placeholder="Profissao">
+                <datalist id="Profissao">
+                    <option> Professor</option>
+                    <option>Medico</option>
+                    <option>Policia</option>
+                    <option>Advogado</option>
+                    <option>Estudante</option>
+                    <option>Electrecista</option>
+                    <option>Desempregado</option>
+                </datalist>
+            </section>
+            <section>
+                <h3>Fale nos um pouco sobre voce!</h3>
+                    <div>
+                    <label for="nasc">Ano de Nascimento:</label>
+                    <input type="date" name="Nasc" id="nasc" required>
+                    </div>
+                <p> Estamos interresados em ti conhecer um pouco mais. <br> Escreva para nos, estamos aqui para si!</p>
+                <textarea name="Sobre" id="sobre" cols="30" rows="7" required></textarea>
+                    <div>
+                    <input type="file" name="file" id="file">
+                    </div>
+            </section>
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+        </form>
+    </main>
+</body>
+</html>

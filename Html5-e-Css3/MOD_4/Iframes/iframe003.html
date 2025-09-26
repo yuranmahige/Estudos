@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegacao em iframe</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            position: relative;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif 
+        }
+        .header{
+            width: 100%;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: brown;
+        }
+        .Nome-do-site{
+            font-size: 2rem;
+            font-variant: small-caps;
+            color: white;
+            text-align: center;
+            padding: 5%;
+        }
+        .container{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .titulo{
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 1.5em;
+            color: rgba(139, 0, 0, 0.915);
+        }
+        .txt{
+            font-size: 1rem;
+            line-height: 1.3em;
+            text-indent: 1em;
+            text-align: justify;
+            margin: 2em;
+        }
+        .iframe{
+           display: block;
+           width: 95%;
+           min-height: 500px;
+           margin: 50px auto;
+           border: 2px solid #ccc;
+        }
+        .li{
+            margin-left: 3em;
+            line-height: 2em;
+        }
+        .link:active{ color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+            <h1 class="Nome-do-site"> Meu site</h1>
+    </header>
+    <main class="container">
+        <h1 class="titulo">Iframe</h1>
+         <p class="txt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eligendi esse inventore deleniti exercitationem corrupti commodi officiis libero quos? Cum dolores facilis ducimus perspiciatis? At adipisci fuga cumque reprehenderit dolores?
+            Libero, corporis esse vitae pariatur obcaecati est, natus a placeat molestiae recusandae perspiciatis dolores rem similique atque, saepe culpa odit et quia optio dolore repellat qui laboriosam aliquam? Molestias, quae!
+        </p>
+        <h2 class="sub-titulo titulo">Navegacao em iframes</h2>
+        <p class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos aliquid, cum laborum in expedita quam sunt quisquam quasi nostrum nihil saepe error facere dolor enim, suscipit soluta laboriosam explicabo!</p>
+        <ul>
+            <li class="li"><a class="link" href="iframe interno/tabela001.html" target="Iframe"> Primeira Tabela</a></li>
+            <li class="li"><a class="link" href="iframe interno/tabela002.html" target="Iframe"> Segunda Tabela</a></li>
+            <li class="li"><a class="link" href="iframe interno/tabela003.html" target="Iframe"> Terceira Tabela</a></li>
+        </ul>
+        <div>
+            <iframe class="iframe" name="Iframe" srcdoc="<h1 style='text-align:center;'> Escolha uma das opcoes acima</h1><p style='margin-left: 2em;'> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora animi architecto rerum facilis hic nobis fuga deleniti delectus qui enim, repellendus magnam quaerat consectetur unde cupiditate repellat in aliquid molestias.</p><img style='display: block; margin: 50px auto 0;' src='../Arquivos/Imagens/cursoemvideo.png' alt='Logo do curso em video'>" frameborder="1" scrolling="auto">
+                [O seu navegador nao e compativel]
+            </iframe>
+        </div>
+    </main>
+</body>
+</html>

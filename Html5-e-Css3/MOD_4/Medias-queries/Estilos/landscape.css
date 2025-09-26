@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+.tt{ display: none;}
+
+@media screen and (min-width: 992px) {
+    body{
+        background-color: white;
+    }
+    main{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main::after{
+        content: "Reduza a tela a um tamanho menor";
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 480px){
+    
+.vid{
+    display: block;
+    min-width: 100%;
+    height: 100%;
+}
+
+}

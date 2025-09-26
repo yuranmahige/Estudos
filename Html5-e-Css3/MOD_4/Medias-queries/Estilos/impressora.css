@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Para Impreensao */
+
+.body, html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cabecalho{
+    background-color: none;
+}.titulo-site{
+    color: black;
+    text-align: left;
+}.nav{
+    display: none;
+}
+
+img{
+    display: none;
+}.txt{
+    line-height: 1.5em;
+    color: black;
+}

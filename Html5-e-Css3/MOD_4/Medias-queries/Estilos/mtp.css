@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/* Geral */
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body, html{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+.cabecalho{ background-color: darkgray;
+}.titulo-site{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}.nav{
+    margin-top: 1em;
+    margin-left: 10px;
+}.menu{
+    display: inline-block;
+    padding: 3px;
+    margin-right: 10px;
+    border: 1px solid gray;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: gray;
+}.lnk-menu{
+    color: #ffffffe0;
+}.lnk-menu:hover{
+    color: white;
+}.lnk-menu:active{
+    font-weight: bold;
+}
+
+.main{
+    max-width: 800px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}.tt{
+    margin-top: 1.4em;
+    text-align: center;
+}.detalhe{ 
+    display: inline-block;
+    margin-top: 1.2em;
+    font-weight: bold;
+}.fr{
+    float: right;
+}
+
+.content{
+    margin-top: 5em;
+}.txt{
+    line-height: 1.3em;
+    margin-top: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

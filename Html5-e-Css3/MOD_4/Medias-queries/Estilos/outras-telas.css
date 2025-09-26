@@ -1,0 +1,43 @@
+@charset "UTF-8";
+    
+ .tablet, .desktop, .telas-maiores, .print{ margin: auto;}
+
+@media print{
+    .print{  display: block;}
+    .mobile{display: none; }
+    .tt{
+        text-shadow: none;
+        color: black;
+        font-family: 'Courier New', Courier, monospace;
+        }
+    .main{
+         min-width: 650px;
+         border: 2px dotted black;
+        }
+    body::after{
+        content: 'Essa pagina foi desenvolvida por: "https://github.com/yuranmahige".';
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{background-image: url('../../Arquivos/Imagens/back-tablet.jpg');}
+    .main{ max-width: 450px; }
+    .tablet{ display: block;}
+    .mobile{display: none; }
+   
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+     body{background-image: url('../../Arquivos/Imagens/back-pc.jpg');}
+    .main{ max-width: 650px; }
+    .desktop{  display: block;}
+    .mobile{display: none; } 
+}
+
+@media screen and (min-width: 1200px) {
+     body{background-image: url('../../Arquivos/Imagens/back-tv.jpg');}
+    .main{ max-width: 800px;}
+    .telas-maiores{ display: block;}
+    .mobile{display: none; }
+}

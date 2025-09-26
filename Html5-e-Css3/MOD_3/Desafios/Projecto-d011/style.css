@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    background: black url('Arquivos/Imagens/espaco.jpg') center center / cover no-repeat fixed;
+}
+.container{
+    position: relative;
+    height: 100vh;
+}
+.img{
+    position: absolute;
+    left: 40%; top: 40%;
+    transform: translate(-50%,-50%);
+    max-width: 300px;
+    width: 100%;
+}
+
+/* imagem flutuante*/
+.img{
+    animation: flutuar 10s ease-in-out infinite;
+}
+@keyframes flutuar{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-120px);
+    }
+
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe interno</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            position: relative;
+            font-size: 16px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .header{
+            width: 100%;
+            background-color: brown;
+        }
+        .Nome-do-site{
+            font-size: 2rem;
+            font-variant: small-caps;
+            color: white;
+            text-align: center;
+            padding: 5%;
+        }
+        .container{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .txt{
+            font-size: 1rem;
+            line-height: 1.3em;
+            text-indent: 1em;
+            text-align: justify;
+            margin: 3em 2em 0;
+        }
+        .iframe{
+           width: 100%;
+           min-height: 500px;
+        }
+        button.ver{
+            display: block;
+            width: 70px;
+            font-size: .9em;
+            margin: 0 auto 50px;
+            padding: 6px;
+            background-color: #4178e7;          
+            border: none;        
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .link_v{
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+        .link_v:active{ color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+            <h1 class="Nome-do-site"> Meu site</h1>
+    </header>
+    <main class="container">
+         <p class="txt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eligendi esse inventore deleniti exercitationem corrupti commodi officiis libero quos? Cum dolores facilis ducimus perspiciatis? At adipisci fuga cumque reprehenderit dolores?
+            Libero, corporis esse vitae pariatur obcaecati est, natus a placeat molestiae recusandae perspiciatis dolores rem similique atque, saepe culpa odit et quia optio dolore repellat qui laboriosam aliquam? Molestias, quae!
+        </p>
+        <div>
+            <iframe class="iframe" src="iframe interno/tabela003.html" frameborder="0" scrolling="auto">
+                [O seu navegador nao e compativel]
+            </iframe>
+        </div>
+        <button class="ver"><a class="link_v" href="iframe interno/tabela003.html" target="_blank">Visitar</a></button>
+    </main>
+</body>
+</html>

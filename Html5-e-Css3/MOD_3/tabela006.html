@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de tabelas</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+        td, th{
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .destaque{
+            background-color: cyan;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <colgroup>
+                <col class="destaque">
+                <col>
+                <col>
+                <col class="destaque">
+            </colgroup>
+            <caption> Cadastro</caption>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissao</th>
+            </tr>
+            <tr>
+                <td>Antonio Frapos</td>
+                <td class="center">M</td>
+                <td class="center">33</td>
+                <td>Policia</td>
+            </tr>
+            <tr>
+                <td>Dercio Gomes</td>
+                <td class="center">M</td>
+                <td class="center">49</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Silvia Fernando</td>
+                <td class="center">F</td>
+                <td class="center">36</td>
+                <td>Bombeiro</td>
+            </tr>
+            <tr>
+                <td>Alfredo Nhampose</td>
+                <td class="center">M</td>
+                <td class="center">47</td>
+                <td>Advogado</td>
+            </tr>
+        </table>
+    </main>
+</body>
+</html>

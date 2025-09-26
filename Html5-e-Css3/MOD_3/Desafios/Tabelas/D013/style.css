@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    max-width: 820px;
+    margin: auto;
+}
+.titulo{
+    font: normal bold 1.7rem Arial;
+    margin-left: 10px;
+    color: #4178e7;
+}
+.table{
+    width: 300px;
+    height: 230px;
+    margin: 7rem auto;
+    text-align: center;
+}
+td{
+    border: 1.5px solid black;
+}
+.button{
+    display: block;
+    margin: auto;
+    padding: 6px;
+    background-color: #4178e7;          
+    border: none;        
+    border-radius: 6px;
+    cursor: pointer;
+        }
+.link_d{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+        }
+.link_d:active{
+    color: #ccc;
+        }

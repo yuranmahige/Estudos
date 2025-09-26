@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 769px) and (max-width:991px){
+   .curso-box{
+    display: flex;
+    height: 135px;
+    width: 300px;
+    margin-right: 2em;
+    }
+    .thumb-curso{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width:992px){
+    header{ margin-bottom: 8em; }
+   .header-i{
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10em;
+   }
+   .menu-burguer, .btn-cancel{ display: none;}
+   .menu{ 
+    position: static;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding: 0;
+    background-color: transparent;
+    }
+    .menu_li, .menu-box{
+        margin: 0;
+        font-size: .9rem;
+    }
+    .menu-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ttp{ margin-bottom: 2em; }
+    main, aside{
+        max-width: 998px;
+        margin: auto;
+    }
+    .curso-box{
+    display: flex;
+    height: 155px;
+    width: 300px;
+    margin-right: 2em;
+    }
+    .thumb-curso{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        min-width: 100px;
+        height: 100px;
+    }
+    .section-foot{
+        display: flex;
+        align-items: center;
+    }
+    .social{
+        text-align: right;
+    }
+}
+ 
