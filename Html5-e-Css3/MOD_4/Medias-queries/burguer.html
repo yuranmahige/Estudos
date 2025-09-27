@@ -11,21 +11,17 @@
     <header>
         <section class="header-i">
             <img src="../Arquivos/Imagens/Logo-estudonauta.png" alt="Estudonauta" class="logo-site">
-            <button class="menu-burguer">
-                <span class="lnh"></span><span class="lnh lnh-ii"></span><span class="lnh lnh-iii"></span>
-            </button>
-         <nav class="menu">
-            <button class="btn-cancel">
-                <span class="lnh-cancel"></span><span class="lnh-cancel lnh-cancel-i"></span>
-            </button>
-            <ul class="menu-box">
+            <button class="menu-burguer" onclick="clickMobile()"> <span class="lnh"></span><span class="lnh lnh-ii"></span><span class="lnh lnh-iii"></span></button>
+            <nav class="menu" id="itens">
+                <button class="btn-cancel" onclick="clickMobile()"><span class="lnh-cancel"></span><span class="lnh-cancel lnh-cancel-i"></span></button>
+                <ul class="menu-box">
                 <li class="menu_li"><a href="#" class="menu_lnk">cursos</a></li>
                 <li class="menu_li"><a href="#" class="menu_lnk">quem somos</a></li>
                 <li class="menu_li"><a href="#" class="menu_lnk">blog</a></li>
                 <li class="menu_li"><a href="#" class="menu_lnk">ajuda (administrativo)</a></li>
                 <li class="menu_li"><a href="#" class="menu_lnk">validar certificado</a></li>
-            </ul>
-         </nav>
+             </ul>
+            </nav>
         </section>
         <section>
             <h1 class="ttp">Cursos de tecnologia com tutoria Aprenda com Gustavo Guanabara</h2>
@@ -100,5 +96,11 @@
             </div>
         </section>
     </footer>
+    <script>
+        function clickMobile() {
+            if( itens.style.display == 'block'){ itens.style.display = 'none'
+            }else{itens.style.display = 'block'}     
+        }
+    </script>
 </body>
 </html>
