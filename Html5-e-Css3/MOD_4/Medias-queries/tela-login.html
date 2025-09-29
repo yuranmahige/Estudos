@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="Pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="Estilos/tela-login.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="login-i"><img src="" alt="imagem ilustrativa"></div>
+            <div class="login-ii">
+                <form action="../Inputs/recebido.php" method="post">
+                    <div><input class="input" type="email" name="Mail" id="mail" required autocomplete="email"> <label for="mail" class="label">Digite o seu e-mail</label></div>
+                    <div><input class="input" type="password" name="Pass" id="pass" required min="8" max="16" autocomplete="current-password"><label for="pass" class="label">Palavra-passe</label></div>
+                    <div class="entrar"><input class="input submit" type="submit" value="Iniciar seccao"></div>
+                </form>
+                <div class="nova-senha"><a href="#">Esqueci-me da palavra-passe</a></div>
+                <div class="nova-conta"><a href="#"><button class="input">Criar conta nova</button></a></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+:root{
+    --body: teal;
+    --form:  rgb(81, 155, 246);
+    --label: #6b6a6a;
+    --color-txt: #ffffff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: var(--body) ;
+}main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.container{
+    width: 320px;
+    border-radius: 5px;
+    box-shadow:  2px 2px 20px rgba(255, 255, 255, 0.329);
+    background-color: var(--form);
+}
+.login-ii{
+    padding: 10px;
+    text-align: center;
+}
+.input{
+    height: 3em;
+    width: 100%;
+    margin-bottom: .3em;
+    border: none;
+    border-radius: 5px;
+}.label{
+    position: absolute;
+    left: 3.5em;
+    font-size: 14px;
+    color:var(--label);
+    transform: translateY(.7rem);
+}.entrar{
+    margin: 2em auto 0;
+    width: 50%;
+}.submit{
+    background-color: var(--body);
+    border-radius: 5px;
+    color: var(--color-txt);
+}.nova-senha{
+    color: var(--color-txt);
+    margin: 1em 0;
+    font-size: .9em;
+}
