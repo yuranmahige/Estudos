@@ -82,4 +82,9 @@ body{
     font-size: .9em;
 }
 /* formulario */
-.input:focus ~ .label, .input:valid ~ .label{  transform: scale(1);}
+.input:focus{
+    outline: 2px solid var(--body);
+}
+.input:focus ~ .label, .input:valid ~ .label{ 
+    transform: scale(1);
+    }
