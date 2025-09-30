@@ -20,7 +20,8 @@ body{
     min-height: 100vh;
     font-family: sans-serif;
     font-size: 16px;
-    background-color: var(--body) ;
+    line-height: 1.4em;
+    background-color: var(--body);
 }main{
     position: relative;
     height: 100vh;
@@ -28,27 +29,46 @@ body{
     align-items: center;
     justify-content: center;
 }.container{
+    position: relative;
     width: 320px;
     border-radius: 5px;
     box-shadow:  2px 2px 20px rgba(255, 255, 255, 0.329);
     background-color: var(--form);
+}
+.login-img{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.txt{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}.login{ 
+    margin-bottom:1em;
+    font-size: 1.8rem;
 }
 .login-ii{
     padding: 10px;
     text-align: center;
 }
 .input{
-    height: 3em;
+    padding: 10px;
+    padding-top: 2.2em;
+    font-size: .9em;
+}.box{
+    height: 2.6em;
     width: 100%;
     margin-bottom: .3em;
     border: none;
     border-radius: 5px;
 }.label{
     position: absolute;
-    left: 3.5em;
-    font-size: 14px;
+    left: 1.2em;
+    padding: 3px;
+    font-size: 13px;
     color:var(--label);
-    transform: translateY(.7rem);
+    transform: translateY(.3rem);
 }.entrar{
     margin: 2em auto 0;
     width: 50%;
@@ -61,3 +81,5 @@ body{
     margin: 1em 0;
     font-size: .9em;
 }
+/* formulario */
+.input:focus ~ .label, .input:valid ~ .label{  transform: scale(1);}
