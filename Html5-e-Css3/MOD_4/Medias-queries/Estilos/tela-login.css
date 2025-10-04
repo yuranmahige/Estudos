@@ -10,10 +10,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
-    color: inherit;
-}
 body{
     position: relative;
     width: 100%;
@@ -40,19 +36,15 @@ body{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.txt{
-    text-align: center;
+.login-ii{
+    position: relative;
     padding: 10px;
+    text-align: center;
     color: white;
 }.login{ 
     margin-bottom:1em;
     font-size: 1.8rem;
-}
-.login-ii{
-    padding: 10px;
-    text-align: center;
-}
-.input{
+}.input{
     padding: 10px;
     padding-top: 2.2em;
     font-size: .9em;
@@ -80,11 +72,10 @@ body{
     color: var(--color-txt);
     margin: 1em 0;
     font-size: .9em;
+}a{
+    text-decoration: none;
+    color: inherit;
 }
 /* formulario */
-.input:focus{
-    outline: 2px solid var(--body);
-}
-.input:focus ~ .label, .input:valid ~ .label{ 
-    transform: scale(1);
-    }
+.input:focus{outline: 2px solid var(--body);}
+.input:focus ~ .label, .input:valid ~ .label{ transform: scale(1);}

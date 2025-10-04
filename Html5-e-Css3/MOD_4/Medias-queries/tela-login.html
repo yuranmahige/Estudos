@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de login</title>
-    <link rel="stylesheet" href="Estilos/tela-login.css">
+    <link rel="stylesheet" href="Estilos/tela-login.css" media="all">
+    <link rel="stylesheet" href="Estilos/media-login.css">
 </head>
 <body>
     <main>
         <section class="container">
             <div class="login-i"><img src="../Arquivos/Imagens/back-pc.jpg" alt="imagem ilustrativa" class="login-img"></div>
-            <div class="txt"><h2 class="login">Login</h2> <p> Seja bem vindo(a) novamente. Faca login para acessar sua conta e poder fazer as configuracoes no teu ambiente.</p></div>
             <div class="login-ii">
+                <h2 class="login">Login</h2> <p style="margin-bottom: 1.5em;"> Seja bem vindo(a) novamente. Faca login para acessar sua conta e poder fazer as configuracoes no teu ambiente.</p>
                 <form action="../Inputs/recebido.php" method="post">
                     <div><input class="box input" type="email" name="Mail" id="mail" required autocomplete="email"> <label for="mail" class="label">Digite o seu e-mail</label></div>
                     <div><input class="box input" type="password" name="Pass" id="pass" required min="8" max="16" autocomplete="current-password"><label for="pass" class="label">Palavra-passe</label></div>
