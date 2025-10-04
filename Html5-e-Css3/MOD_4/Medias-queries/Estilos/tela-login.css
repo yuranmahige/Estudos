@@ -32,6 +32,8 @@ body{
     overflow: hidden;
     box-shadow:  2px 2px 20px rgba(255, 255, 255, 0.329);
     background-color: var(--form);
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
 }.login-i{
     height: 200px;
     background: #000000 url('../../Arquivos/Imagens/back-pc.jpg') no-repeat top center/cover;
