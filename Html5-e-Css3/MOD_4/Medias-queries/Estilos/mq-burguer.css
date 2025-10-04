@@ -14,6 +14,7 @@
         width: 100px;
         height: 100px;
     }
+    
 }
 
 @media screen and (min-width:992px){
@@ -67,8 +68,7 @@
         display: flex;
         align-items: center;
     }
-    .social{
-text-align: right;
-    }
+    .social{text-align: right; }
+    .menu_lnk:hover{ background-color: #ffffff31;}
 }
  

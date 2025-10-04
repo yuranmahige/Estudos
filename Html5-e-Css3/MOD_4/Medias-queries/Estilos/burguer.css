@@ -2,12 +2,12 @@
 
 :root{
     --texto: #fefefe;
-     --foot: #f4efeffc;
+    --foot: #f4efeffc;
     --menu: #fefefec1;
     --h4-color: #a19f9f;
     --p-color:#000000c8;
     --menu-mobile: #2b2778;
-     --Cp-: #030361; 
+    --Cp-: #030361; 
 }
 
 *{
@@ -16,9 +16,10 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+body::-webkit-scrollbar{width: 0;}
 
 /* Ajustes generalizados */
-.space{margin: 3.4em 0;}
+.space{margin: 2.4em 0;}
 .des-curso{padding: 10px;}
 ul{list-style: none;}
 h2{font-size: 2.1rem;}
@@ -28,7 +29,8 @@ h3{font-size: 1.6rem;}
 p{ 
     font-size: 1.2rem;
     line-height: 1.5em;
-    color: var(--p-color)
+    color: var(--p-color);
+    padding: 0 20px;
 }
 button{
     background-color: transparent;
@@ -66,7 +68,7 @@ header{
     padding: 30px;
     margin-left: -10px;
     background-color: var(--menu-mobile);
-    z-index: 1;
+    z-index: 10;
 }.menu_lnk{
     padding: 10px;
     text-transform: uppercase;
@@ -74,7 +76,6 @@ header{
     color: var(--menu);
     border-radius: 5px;
 }.menu_lnk:hover{
-    background-color: #ffffff31;
     color: var(--texto);
 }.menu-burguer{
     float: right;
@@ -150,15 +151,15 @@ aside{
     margin: 5em 0;
 }.aside_p{
     text-align: left;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 footer{
-    padding: 5%;
+    padding: 20px;
     background-color: var(--foot);
 }.lnk{
     margin: 10px;
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }.foot_li{
     margin-bottom: 10px;
     display: inline-block;
