@@ -3,9 +3,17 @@
 @media screen and (min-width: 650px) and (max-width:992px) {
   .container{
     min-width: 630px;
+    height: 410px;
+  }
+  main{
+    margin: 0;
+    align-items: center;
   }
   .login-i{
-    height: 100%;
+    width: 35%;
+    height:100%;
+    float: left;
+    background-position: top right;
   }
   .login-ii{
     width: 65%; 
@@ -15,13 +23,20 @@
 }
 @media screen and (min-width: 993px){
     .container{
+    height: 410px;
     min-width: 830px;
   }
+  main{
+    margin: 0;
+    align-items: center;
+  }
   .login-i{
-    float: right;
+    width: 45%;
     height: 100%;
+    float: right;
   }
   .login-ii{
+    float: left;
     width: 55%; 
     height: 100%;
 }
