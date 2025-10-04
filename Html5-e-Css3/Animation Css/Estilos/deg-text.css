@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.texto{
+    font: bolder 4rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg, #00e3cc, #ff0000, #009c88, #44e3b3);
+    background-size: 400% 100%;
+    -webkit-background-clip: text; /*Linha de erro*/
+    -webkit-text-fill-color: transparent;
+    outline: none;
+    padding: 0 10px;
+    animation: degrade 10s linear infinite alternate;
+}
+@keyframes degrade {
+    0%{background-position-x: 0%;}
+    100%{background-position: 400%;}
+}
