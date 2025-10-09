@@ -167,6 +167,9 @@ footer{
     text-transform: uppercase;
     color: var(--h4-color);
     margin-bottom: 15px;
+}.icon{
+    width: 25px;
+    margin-left: 1em;
 }
 .direito{
     font-size: 1em;

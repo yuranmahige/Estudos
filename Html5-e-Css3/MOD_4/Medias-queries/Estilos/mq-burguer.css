@@ -67,6 +67,7 @@
     .section-foot{
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     .social{text-align: right; }
     .menu_lnk:hover{ background-color: #ffffff31;}
