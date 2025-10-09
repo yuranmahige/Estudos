@@ -65,9 +65,11 @@
         height: 100px;
     }
     .section-foot{
+        max-width: 992px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-inline: auto
     }
     .social{text-align: right; }
     .menu_lnk:hover{ background-color: #ffffff31;}

@@ -155,6 +155,7 @@ aside{
 }.aside_p{
     text-align: left;
     margin-bottom: 2em;
+    margin-top: 1em;
 }
 footer{
     padding: 20px;
