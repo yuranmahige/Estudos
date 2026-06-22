@@ -1,0 +1,50 @@
+			Recursos de Virtualizacao
+	
+	Como desligar um VM
+
+Ao desligar um VM ela entra em pausa e nos da tres opcoes de desligamento
+
+1- save the machine state
+2- send the shutdown signal
+3- power off the machine
+
+Evitar sempre desligar com a opcao 3, power off, isso e igual a tirar o cabo de carramento da tomada, e para quem usa windows, sabe ou ja passou pela tela azul, isso mata todos processos e pode afectar a escrita do disco.
+
+A opcao 2, e como desligar normalmente, e como clicar em desligar na interfase grafica( cancela todas accoes de desliga)
+
+A opcap 1, e como suspender (apenas pausa, ao ligar novamente, todas tarefas estaram la e disponivel)
+
+
+
+	Add Recusos para convidados no Windows
+
+Para abilitar alguns recursos como: copiar da VM para Maquina, sensebilidade, tranferencia entre VM's, etc, devemos abilitar a opcao Guest additions, localizado no menu superior em Devices. (ultima opcao)
+Vai abrir o explorer com um novo cd, so abrir e instalar. apos isso havera novas opcoes em Devices.
+
+ E para testar podemos copiar um arquivo da maquina fisica e colar na VM e vice-versa.
+ 
+ Da para fazer muitas outras coisas...
+ 
+ 
+ 	Compartilhando directorios entre Maquina Fisica e uma VM windows
+ 	
+ Para partilhar projectos ou outros directorios que queremos que estejam likandos para qualquer alteracao, usamos a opcao shared folders, em Devices (importar ter activo os recursos add para convidados).
+ 
+ Basta clicar em Shared folders, add shared e escolher o directorio.
+ 
+ Para aceder o arquivo, na maquina fisica clicamos win r, e digitamos \\vboxsvr e pesquisar, veremos o directorios, podemos copiar e colar em outro lugar.
+ 
+ Podemos tambem mapear como uma unidade de rede, para tal, abrimos o cmd e inserimos o sequente comando
+ 
+ net use S: \\vboxsvr\sofwares > Na VM
+ 
+ e pronto.
+ 
+ 
+ 	Ajustando a Proporcao de visualizacao em Janelea (Tela Cheia)
+ 	
+ Em VM com SO de interfase grafica, como o Windows, basta clicar em maximizar e pronto, mas em ambientes de texto, ela fica em tela cheia mas cria borda, nao preenche a tela, para tal usamos o comando:
+ 
+ CTRL da Direita + F > Tela Cheia
+  CTRL da Direita + C > Normal
+  
