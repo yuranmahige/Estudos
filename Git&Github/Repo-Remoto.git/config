@@ -1,0 +1,7 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = true
+[remote "Servidor-git"]
+	url = file://192.168.10.99/home/gekko/Documents/Estudos/Repo-Remoto.git
+	fetch = +refs/heads/*:refs/remotes/Servidor-git/*

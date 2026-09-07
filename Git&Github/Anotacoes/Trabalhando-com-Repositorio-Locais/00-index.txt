@@ -1,0 +1,47 @@
+	###Como Criar um repositorio local e add arquivos no stage
+
+Para criar um repositorio na nossa maquina, usamos o 
+	git init > Cria repositorios git local, e importante que estamos no directorio desejado
+
+Usamos o 
+	git add nome.arquivo > Para add um arquivo ao stage do git e para adicionar varios arquivos, usamos o
+	git add . > o ponto representa todos arquivos.
+	
+
+ Stage e a area onde os arquivos git ficam, o stage e quem examina e rastrea cada mudanca/alteracao dos arquivos. chamamos de directorio de trabalho / working directory.
+ 
+ Para podermos add um arquivo ao stage do git, usamos o git add, para addicionar e tornar o arquivo rastreavel, e o git commit, para comitar o arquivo
+ 
+ Para comitar um arquivo, usamos o comando
+ 
+ 	git commit -m "A mensagem".
+ 	
+ 
+ A cada alteracao, precisamos add o arquivo no stage, e depois comitar.
+ 
+ Passos em sequencia para novo arquivo ou alteracao feita.
+ 
+ 1- Add o arquivo ao stage (git add)
+ 2- Comitados o arquivo. (git commit)
+ 
+ Qnd modificamos um arquivo ou criamos um novo arquivo, chamamos de nao rastreado. (aqui o git nao sabe de nenhuma alteracao, nas rastreia nada)
+ 
+ Qnd add o arquivo ao stage, chamos de rastreados ( aqui o git esta atentendo a qualquer mudanca, mas nao add oa historico de alteracoes) e
+ 
+ Qnd commitamos, chamos de comitados > ( aqui o git salva a alteracao no historico de alteracoes, que podemos ver com o git log (ver na anotacao primeiros passos)).
+ 
+	 
+	 #Tudo com um so comando
+	 
+ Podemos simplificar os passos acima com um unico comando, sim, add e comitar de uma so vez. Porem o metodo so funciona para arquivos que ja tenham sido adicionados ao stage, por isso e importante verificar antes de usar, git status para verificar.
+ 
+ 	git commit -am "Metodo unico para add e commitar mudancas nos arquivos ja rastreados"
+ 
+ 
+ 	##Ignorando arquivos
+.gitignore > criamos o arquivo .gitignore para inserir arquivos que nao queremos que sejam rastreados pelo git, por exemplo temos um checklist para termos nocao dos objectivos, mas esse e um documento nosso, para controle e gestao, e nao queremos que ele seja comitado, ai que entra o gitignore.
+
+ * Nao esquecer de add e commitar o arquivo
+ 
+
+-------------------------------------------------------------------------------------------------------

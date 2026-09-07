@@ -1,0 +1,67 @@
+			###Manipulando arquivos git
+		
+ #Remover arquvivos
+ E importante que removamos os arquivos do stage, se quiseremos eliminar, para remover um arquivo, usamos o comando:
+	
+	git rm arquivo.txt
+	
+E para remover um directorio, usamos o comando:
+	
+	git rm -r Anotacoes
+
+Apos remover, precisamos comitar as mudancas.
+
+
+#Renomeando e Movendo Arquivos
+
+Se mudarmos o nome / movemos o arquivo para outro local, o git vai considerar que e um novo arquivo (apesar de que agora qnd movemos o git consegue comparar e verificar que e o mesmo arquivo) porque o git verifica o nome e o conteudo, e as alteracoes precisam ser realizadas dentro do stage para ele poder rastrear.
+
+Para renomear usamos o comando:
+
+	git mv nome.arquivo novo-nome.arquivo
+	
+
+
+E para mover usamos o mesmo comando, vamos supor que queremos mover o AulaHoje.txt para o directorio Aulas. e importante que o directorio exista antes de movermos.
+entao para mover usamos o comando:
+
+	git mv AulaHoje.txt Aulas/AulaHoje.txt
+		   
+		    !           !
+		    
+		arquivo a     Directorio requerido + arquivo a ser movido
+		ser movido
+		
+
+Para renomear ou mover um arquivo que contem espacos no nome, usamos as aspas ex: git mv "Aprendendo Docker.txt" Dockerizando.txt
+
+Note que o arquivo a ser renomeado era separado por espacos.
+________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+	##Desfazendo Alteracoes
+
+#Desfazendo alteracoes nao rastreadas
+
+Para desfazer uma alteracao/modificacao que ainda nao foi add ao stage, usamos o comando:
+
+	git checkout --nome.arquivo
+
+#Desfazendo alteracoes rastreadas
+
+Para desfazer uma alteracao/modificacao que ja foi add ao stage, mas que nao foi comitada, usamos o comando:
+
+	git reset --nome.arquivo
+	
+	usar o git reset, sem especificar o arquivo, desfaz todos arquivos rastreados nao comitados
+
+ #Desfazendo alteracoes comitadas
+ 
+ Para desfazer uma alteracao/modificacao que ja foi comitada, usamos o comando:
+ 
+ 	git revert --no-edit ID > metodo recomendado
+ 
+ 
+ podemos usar o comando git reset --hard / ID, para arquivos rastreados.
+
+
+					FIM 
