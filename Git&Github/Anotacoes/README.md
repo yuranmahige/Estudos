@@ -1,0 +1,1 @@
+Estas anotações são um resumo pessoal dos meus estudos baseados no livro 'Controlando Versões com Git e GitHub' (Casa do Código), de Alexandre Aquiles e Rodrigo Ferreira.  Este repositório não tem fins lucrativos e não substitui a leitura da obra original. Todos os direitos da obra original pertencem aos autores e à editora.

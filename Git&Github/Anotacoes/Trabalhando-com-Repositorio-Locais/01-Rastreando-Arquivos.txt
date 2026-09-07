@@ -1,0 +1,53 @@
+			###Rastreando arquivos no git, verificando alteracoes feitas
+			
+	##Historico de Comites
+	
+ Para verificar o historico de alteracoes feitas, usamos 
+ 	
+ 	#git log > historico de comites feitos e onde obtemos o Id de cada historico de comite feito
+ 	
+ git log -n1 > usamos o parametro -n + numero inteiro, para limitar o historico de comites que deve mostrar.
+ 
+ git log --oneline > para que os dados fiquem organizados em linhas, como se fosse uma tabela, melhor para organizacao.
+
+
+ O parametro --stat, serve para mostrar o nr de linhas alteradas, linhas inseridas e removidas no ultimo comite.
+ 
+ git log --stat > para todas arquivos (qnd aparecer o :, usamos o "q" para sair e a techa "ENTER" para continuar a ver.
+ 
+ git log --stat index.txt > para arquivo especifico
+ 
+ podemos unir os camandos
+ 
+ git log -n2 --oneline --stat
+ 
+__ _______________________________________________________________________________________________________________________________________________________________________________________________________________
+
+	#git diff > Usamos para verificar e comparar mudancas feitas em arquivos
+
+Usamos o git diff, para mostrar arquivos ainda nao rastreados (arquivos que ainda nao foram add ao stage)
+
+para mostrar arquivos ja rastreados usamos o 
+
+	 git diff --staged.
+	 
+para usarmos o git diff em arquivos especificos, basta inserir o ID
+
+executamos o git log -n1 --oneline para pegar o id e depois, executamo o comando
+	
+	git diff ID
+
+podemos usar o git diff HEAD > para mostrar as diferencas do ultimo arquivo comitado (e importante verificar se o HEAD, realmente corresponde ao arquivo que pretendemos, usando o git log)
+
+
+Para verifcar arquivos de um ponto ate o outro usamos o .. e o ~
+
+usando os dois pontos> 
+	git diff ID do inicio .. ID do ultimo comite
+	
+Usamos o ~ para comparar as alteracoes anteriores no nosso arquvivo
+	git diff ID ~ 4 > vai comparar as ultimas quantro alteracoes comitadas.
+	
+	
+	
+A principal diferenca entre os dois, e que o metodo ~, mostra tambem alteracoes fora do stage, enquanto o .. mostra apenas as comitadas.

@@ -1,0 +1,95 @@
+					Git e GitHub
+
+Git e um sistema de controle de versionamento, criado por Linus Torvalds(criador do Linux)
+
+Github e uma aplicacao web para hospedagem de repositorios git e serve como uma rede social para programadores
+
+					Git - Essencial
+
+
+#Instalado git no linux Ubuntu (debian)
+
+	sudo apt-git install git
+
+#configuracoes basicas, importante, informar nome e e-mail
+
+	git config --global user.name "Seu Nome"
+	git config --global user.email "seu@email.com"
+
+
+#Criando um repositorio git
+	git init > inicia um repositorio git(cria)
+	git status > para verificar o estado
+	
+ para add um arquivo, precisamos executar o comando
+ 	git add NOMEARQUIVO.arquivo
+ 	
+ para commitar:
+ 	git commit -m "Primeiro Commit"
+ 	
+ usamos o git status, para ver se tem algum arquivo que nao foi commitado, e podemos usar o
+ 	git log > para ver o historico de commits
+ 	
+ 	
+ 					Github - Essencial
+ 
+#Criar Conta
+
+ Para poder hospedar o nosso projecto, salvar e poder acessar em qualquer momento e lugar, partilhar  com outros, usaremos o github, para isso precisamos nos cadastrar no github, criar conta
+ https://github.com
+
+#Apontado o projecto para o Github 
+ 
+ Depois disso precisamos criar o repositorio no github, de preferencia que seja o mesmo nome do directorio(pasta) que criamos localmente, no nosso computador.
+
+ No nosso computador, abrimos o terminal, na raiz do directorio do nosso projecto(na pasta do nosso projecto)
+usamos o comando:
+	git remote add origin link/dorepositorio.git (add o .git, apos o link)
+	ex: git remote add origin https://github.com/yuranmahige/Git-Github-curso.git
+	
+ Para verificar, usamos o:
+	git remote -v > deve aparecer a nossa conta
+	
+ Caso falhe ou deseje alterar o link, use:
+	git remote Set-url origin link/corrigido
+
+ e verificamos git remote -v
+
+#Subindo o nosso projecto PUSH
+ O comando para subir o nosso projecto e o seguinte:
+ 	git push origin master 
+ 	/ pesquisar diferenca de main e master
+ 
+ ? master > termo antigo
+ ? main > apos 2020, padronizaram para main, e a mesma coisa.
+ 
+
+ Apos 2021, o GitHub desativou a autenticação por senha comum para operações do Git via HTTPS. sendo assim o comando vai de git push origin master vai dar erro na senha, para resolver isso precisamos configurar a chave SSH.
+ 
+#Configurando chave SSh > Google AI
+
+
+ Apos isso so confirmar, acessando o nosso perfil do github, no menu repositorios
+
+#Clonando um repositorio 
+
+ para clonar um repositorio, baixar um projecto para o nosso computador, usamos o comando:
+ 	git clone url/do/repositorio
+ 	ex: git clone https://github.com/yuranmahige/Git-Github-curso
+ isso e util, qnd mudamos de computador, sistema ou queremos copiar o projecto publico de alguem.
+ 
+ 
+ 
+ 
+ #### Comandos aprendidos
+ 
+ git init > iniciar repositorio git local
+ git add arquivo.arquivo > add arquivo ao repositorio criado
+ git commit -m "ajuda no versionamento" > salvar progresso
+ git remote add origin > sicronizar o repositorio local com o Github
+ git remote -v > verificar
+ git push origin master > subir para nuvem
+ git clone url > clonar projecto da nuvem para local
+ git status > verificar se alteracoes no arquivo
+ git log > verificar historico de commites
+ 
