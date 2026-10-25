@@ -1,6 +1,6 @@
 # Exercícios e Desafios — Linux Ubuntu (Iniciante)
 
-`Ctrl+Alt+F3` -> Modo texto
+`Ctrl+Alt+F3` -> Modo texto\
 `Ctrl+Alt+F2` -> Voltar para GUI (Interfase grafica)
 
 No modo texto, navegar ate o directorio estudo, verificar que estas na branch linux-ubuntu, caso nao mudar.
