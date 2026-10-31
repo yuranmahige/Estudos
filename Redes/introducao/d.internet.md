@@ -10,7 +10,7 @@ A mais notável das internets é a **I**nternet (note o **I** maiúsculo).
 
 ## Video sobre a historia da Internet
 
-![A Internet](internet.webp)
+![A Internet](Internet.webp)
 
 #### Clique para ver : [Como a Internet funciona? - @Curso em Vídeo HTML5 e CSS3](https://youtu.be/nlO5hySqJFA)
 
