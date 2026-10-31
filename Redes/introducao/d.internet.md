@@ -1,18 +1,20 @@
 # A Internet
 
 A Internet é um sistema de comunicacao que nos da acesso a ampla gama de informacao 
-a partir de um ou mais disposito com acesso a Internet.
+a partir de um ou mais dispositos que permitem o acesso a Internet.
 
 **Nota**: Uma **i**nternet (note o **i** minúsculo) são duas ou mais redes que podem se comunicar entre si.\
 A mais notável das internets é a **I**nternet (note o **I** maiúsculo).
 
 > A Internet é uma colaboração de mais de centenas de milhares de redes interconectadas.
 
-## Video sobre a historia da Internet
+## Video sobre como a Internet funciona
 
 ![A Internet](Internet.webp)
 
 #### Clique para ver : [Como a Internet funciona? - @Curso em Vídeo HTML5 e CSS3](https://youtu.be/nlO5hySqJFA)
+
+---
 
 #### TCP/IP
 
