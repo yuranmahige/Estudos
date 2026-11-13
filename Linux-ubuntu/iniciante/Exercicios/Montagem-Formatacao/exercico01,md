@@ -1,0 +1,39 @@
+# Exercícios e Desafios — Linux
+
+`Ctrl+Alt+F3` -> Modo texto\
+`Ctrl+Alt+F2` -> Voltar para GUI (Interfase grafico
+
+**Cenário:** Você recebeu um pen drive novo e precisa prepará-lo para uso exclusivo no Linux.
+
+---
+
+### Nível 1 — Identificar
+
+1. Conecte o pen drive e descubra qual é o dispositivo usando **`dmesg`**.
+2. Confirme com **`lsblk`** e anote o nome da partição (ex: `/dev/sdb1`).
+3. Verifique se já está montado. Se estiver, desmonte.
+
+### Nível 2 — Formatar
+
+4. Formate a partição com **ext2** e a opção `-c` (checagem de blocos).
+5. Confirme com `lsblk -f` que o `FSTYPE` mostra `ext2`.
+
+### Nível 3 — Usar
+
+6. Monte o pen drive em `/mnt/usb`.
+7. Crie um arquivo de teste: `echo "olá linux" > /mnt/usb/teste.txt`
+8. Desmonte e remonte. O arquivo continua lá?
+9. Desmonte e desconecte o pen drive.
+
+### Nível 4 — Bônus
+
+10. Reconecte o pen drive. Ele montou sozinho? Se sim, em qual ponto de montagem?
+11. Formate agora com **ext4** em vez de ext2. Qual a diferença que você nota no `lsblk -f`?
+12. Tente montar o pen drive formatado em ext4 numa máquina Windows (ou pesquise). Dá? Por quê?
+
+---
+
+**Dica:** Se travar em algum passo, o `lsblk` é seu melhor amigo — rode ele a qualquer momento para ver o estado atual. E se errar o dispositivo, use `sudo umount` + `sudo mkfs` de novo no certo.
+
+Boa prática! 🐧
+
