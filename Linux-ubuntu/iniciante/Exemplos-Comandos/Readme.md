@@ -1,0 +1,1 @@
+Vou buscar exemplos de uso de todos comandos listados, combinacoes e mais, obviamente nao vou decorar tudo de uma vez, pouco a pouco chegarei la, havera alguns que provalvemente usarei regularmente e outros com pouca frequencia.
